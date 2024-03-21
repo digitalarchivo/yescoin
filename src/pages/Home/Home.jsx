@@ -123,7 +123,7 @@ const Home = () => {
 
   return (
     <section className="botgame-height-res bg-black h-full text-white">
-      <div className="botgame-bg-gradient h-full">
+      <div className="botgame-bg-gradient h-full min-h-[590px]">
         <div className="relative w-[94%] px-1 max-w-3xl h-full mx-auto lg:pt-10">
           <Coins points={coins} />
           <ClimeDate />
@@ -138,13 +138,13 @@ const Home = () => {
             {isVisible ? (
               <img
                 onClick={tapCoin}
-                className="z-[10] w-[140px] h-[140px] xs:w-[170px] xs:h-[170px] sm:w-[242px] sm:h-[251px]"
+                className="z-[10] w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] md:w-[190px] md:h-[190px]"
                 src={btnCoins}
                 alt="Yes Button"
               />
             ) : (
               <img
-                className="z-[10] w-[140px] h-[140px] xs:w-[170px] xs:h-[170px] sm:w-[242px] sm:h-[251px]"
+                className="z-[10] w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] md:w-[190px] md:h-[190px]"
                 src={btnCoins}
                 alt="Yes Button"
               />

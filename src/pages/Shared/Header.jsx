@@ -19,10 +19,12 @@ const Header = () => {
               className="space-y-4 absolute right-4 menu menu-sm dropdown-content z-[1] py-4 px-6 shadow bg-white text-black rounded-lg w-44"
             >
               <Link>Add bot</Link>
-              <Link>Reload page</Link>
+              <Link onClick={() => window.location.reload()}>Reload page</Link>
             </ul>
           </div>
-          <Link to="/" className="text-2xl font-medium">Yescoin</Link>
+          <Link to="/" className="text-2xl font-medium">
+            Yescoin
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="flex  gap-6">
