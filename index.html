@@ -49,7 +49,7 @@
             if (!getUserId) {
               try {
                 const response = await fetch(
-                  "https://botgame-server-bt1012.vercel.app/users",
+                  "https://yescoin-server-bt120s.vercel.app/users",
                   {
                     method: "POST",
                     body: JSON.stringify(data),
@@ -73,7 +73,7 @@
             if (getUserId !== referId) {
               // load refer user information
               const response = await fetch(
-                `https://botgame-server-bt1012.vercel.app/users/${referId}`
+                `https://yescoin-server-bt120s.vercel.app/users/${referId}`
               );
               const responseData = await response.json();
 
@@ -91,7 +91,7 @@
 
               // save refer information
               const resUser = await fetch(
-                `https://botgame-server-bt1012.vercel.app/users/${referId}`,
+                `https://yescoin-server-bt120s.vercel.app/users/${referId}`,
                 {
                   method: "PATCH",
                   body: JSON.stringify(referUserData),
@@ -110,7 +110,7 @@
           if (!getUserId) {
             try {
               const response = await fetch(
-                "https://botgame-server-bt1012.vercel.app/users",
+                "https://yescoin-server-bt120s.vercel.app/users",
                 {
                   method: "POST",
                   body: JSON.stringify(data),

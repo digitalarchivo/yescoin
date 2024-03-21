@@ -22,7 +22,7 @@ const Ranking = () => {
   useEffect(() => {
     const loadRankUser = async () => {
       const responsive = await fetch(
-        "https://botgame-server-bt1012.vercel.app/ranking"
+        "https://yescoin-server-bt120s.vercel.app/ranking"
       );
       const resData = await responsive.json();
       console.log(resData);

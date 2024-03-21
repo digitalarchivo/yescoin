@@ -68,7 +68,7 @@ const Home = () => {
       const newPoint = 1;
       try {
         fetch(
-          `https://botgame-server-bt1012.vercel.app/users/${isExitUserId}`,
+          `https://yescoin-server-bt120s.vercel.app/users/${isExitUserId}`,
           {
             method: "PATCH",
             body: JSON.stringify({ points: newPoint }),
@@ -91,7 +91,7 @@ const Home = () => {
 
   const setUserInfo = () => {
     const isExistUser = localStorage.getItem("userId");
-    fetch(`https://botgame-server-bt1012.vercel.app/users/${isExistUser}`)
+    fetch(`https://yescoin-server-bt120s.vercel.app/users/${isExistUser}`)
       .then((data) => data.json())
       .then((data) => {
         let { points } = data;

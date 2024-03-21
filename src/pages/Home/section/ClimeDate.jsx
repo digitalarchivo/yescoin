@@ -15,7 +15,7 @@ const ClimeDate = () => {
     const userId = localStorage.getItem("userId");
     const loadUserInfo = async () => {
       const res = await fetch(
-        `https://botgame-server-bt1012.vercel.app/users/${userId}`
+        `https://yescoin-server-bt120s.vercel.app/users/${userId}`
       );
       const data = await res.json();
       const insertDate = new Date(data.date);
