@@ -36,7 +36,7 @@
 
         const referUrl = window.location.search;
         // refer user create
-        if (referUrl) {
+        if (referUrl && !getUserId) {
           try {
             const referId = referUrl.split("=")[1].split("&")[0];
             if (referId) {
